@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "engram-metagpt"
+version = "0.1.0"
+description = "Engram (Lumetra) memory recipe for MetaGPT — durable cross-run memory for multi-agent simulations."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Lumetra", email = "hi@lumetra.io" }]
+keywords = ["engram", "lumetra", "metagpt", "memory", "agents", "multi-agent"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "metagpt>=0.8.0",
+    "requests>=2.31",
+]
+
+[project.urls]
+Homepage = "https://lumetra.io"
+Source = "https://github.com/lumetra-io/engram-metagpt"
+
+[tool.setuptools.packages.find]
+include = ["engram_metagpt*"]
