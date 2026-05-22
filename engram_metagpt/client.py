@@ -84,7 +84,7 @@ class EngramClient:
         if buckets:
             body["buckets"] = buckets
         elif bucket:
-            body["bucket"] = bucket
+            body["buckets"] = [bucket]
         r = requests.post(
             f"{self.base_url}/v1/query",
             headers=self._headers(),
